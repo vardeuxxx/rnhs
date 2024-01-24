@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 150px 20px 20px 150px;
+	  background-image: url('RNHS (3).jpg');
+    }
+	
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: relative;
+      border-radius: 5px;
+	  border: 1px solid;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+	  
+	  }
+    
+    .container input[type="radio"],
+    .container input[type="checkbox"] {
+      margin-bottom: 10px;
+    
+    }
+
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #6ac5fe;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container input[type="submit"]:hover {
+      background-color: #daf0ff;
+    
+    }
+	.school-name {
+      text-align: center;
+      font-size: 22pt;
+      color: white;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+	.logo {
+  border: solid;
+  border-radius: 50%;
+	display: block;
+	width: 80px;
+	height: 70px;
+	margin: 0 auto;
+  
+	
+	</style>
+</head>
+<body>
+
+  <div class="container">
+<img class="logo"
+src="C:\Users\My PC\Desktop\ROSELLE ADAN- Computer Programming\RNHS LOGO.jpeg" alt="RNHS LOGO
+  <div class="container">
+  
+    <h2>Create an Account</h2>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="text" placeholder="First Name" required>
+	   <input type="text" placeholder="Last Name" required>
+	   <input type="text" placeholder="Mobile number or email address" required>
+	   <input type="password" placeholder="New Password" required>
+	   <label>Gender:</label> <br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+	  <input type="submit" value="Sign Up">
+    </form>
+  </div>
+  
+  <div class="school-name">
+    ROSALES NATIONAL HIGH SCHOOL-SHS
+	</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #272e4a;
+      padding: 50px;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #B4C5E4;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .container input[type="text"],
+    .container input[type="password"],
+    .container input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    .container input[type="radio"],
+    .container input[type="checkbox"] {
+      margin-bottom: 10px;
+    }
+    
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #6ac5fe;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .container input[type="submit"]:hover {
+      background-color: #daf0ff;
+    }
+    
+    .container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .container .forgot-password {
+      text-align: center;
+      margin-top: 5px;
+    }
+    
+    .container table {
+      width: 100%;
+    }
+    
+    .container table td {
+      padding: 5px;
+    }
+    
+    .container .signup-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    .container .signup-link a {
+      color: #6ac5fe;
+      text-decoration: none;
+    }
+    
+    .container .signup-link a:hover {
+      text-decoration: underline;
+    }
+    
+    .signup-form {
+      display: none;
+    }
+    
+    .signup-form.show {
+      display: block;
+    }
+  </style>
+  <script>
+    function toggleSignUpForm() {
+      var signupForm = document.getElementById("signupForm");
+      signupForm.classList.toggle("show");
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Login Form</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <input type="submit" value="Login">
+    </form>
+    <div class="forgot-password"> 
+      <a href="#">Forgot Password?</a>
+    </div>
+    <div class="signup-link">
+      Don't have an account? <button onclick="toggleSignUpForm()">Sign Up</button>
+    </div>
+    
+    <div id="signupForm" class="signup-form">
+      <h2>Sign Up Form</h2>
+      <form>
+        <label for="signupUsername">Username:</label>
+        <input type="text" id="signupUsername" name="signupUsername" required>
+        
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <label for="mobileOrEmail">Mobile Number or Email:</label>
+        <input type="text" id="mobileOrEmail" name="mobileOrEmail" required>
+        
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="signupPassword" required>
+        
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
